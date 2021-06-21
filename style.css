@@ -26,12 +26,17 @@ section {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
   border-radius: 10px;
+  box-shadow: 0px 40px 50px hsla(217, 19%, 35%, 0.13);
 }
 .image {
   width: 282px;
   height: 282px;
-  background-size: 352px 281px;
+  background-size: 352px 282px;
+  border-radius: 10px;
+  vertical-align: bottom;
+  object-fit: contain;
   background-image: url("./images/drawers.jpg");
+  background-repeat: no-repeat;
 }
 section article {
   margin: 40px;
