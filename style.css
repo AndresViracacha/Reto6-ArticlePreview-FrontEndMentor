@@ -1,0 +1,124 @@
+/* font-family: 'Manrope', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+:root {
+  --darkGrayBlue: hsl(217, 19%, 35%);
+  --darkBlue: hsl(214, 17%, 51%);
+  --grayBlue: hsl(212, 23%, 69%);
+  --lightBlue: hsl(210, 46%, 95%);
+}
+
+body {
+  background-color: var(--lightBlue);
+}
+
+section {
+  max-width: 730px;
+  max-height: 282px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 260px;
+  display: flex;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  border-radius: 10px;
+}
+.image {
+  width: 282px;
+  height: 282px;
+  background-size: 352px 281px;
+  background-image: url("./images/drawers.jpg");
+}
+section article {
+  margin: 40px;
+  width: 50%;
+}
+section article h2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--darkGrayBlue);
+}
+section article p {
+  font-weight: 500;
+  color: var(--darkGrayBlue);
+}
+.info-share {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+}
+.info-share .avatar {
+  width: 42px;
+  border-radius: 100px;
+  vertical-align: middle;
+}
+.info-share-desc {
+  width: 100%;
+  margin-left: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-share-name {
+  font-weight: 700;
+  color: var(--darkGrayBlue);
+}
+.info-share-date {
+  font-weight: 500;
+  color: var(--darkGrayBlue);
+}
+
+.share-button {
+  position: relative;
+}
+.share-button button {
+  background-color: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.popup {
+  opacity: 0;
+  top: 0;
+  width: 248px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: var(--darkGrayBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -62px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  transition: all 0.5s;
+  visibility: hidden;
+}
+.popup::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: var(--darkGrayBlue) transparent transparent transparent;
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+.popup span {
+  color: var(--grayBlue);
+  text-transform: uppercase;
+  kerning: 100px;
+  margin-right: 22px;
+}
+.popup img {
+  margin-right: 18px;
+}
